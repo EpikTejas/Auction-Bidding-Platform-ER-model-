@@ -1,0 +1,40 @@
+1. USER 
+
+Attributes:
+•	User_ID (PK)
+•	Name
+•	Email (Unique)
+•	User_Type
+
+2. CATEGORY
+
+Attributes:
+•	Category_ID (PK)
+•	Category_Name
+
+3. AUCTION ITEM
+
+Attributes:
+•	Item_ID (PK)
+•	Title
+•	Starting_Price
+•	Seller_ID (FK)
+•	Category_ID (FK)
+
+4. BID 
+
+Attributes:
+•	Bid_ID (PK)
+•	Bid_Amount
+•	Bid_Time
+•	User_ID (FK)
+•	Item_ID (FK)
+
+5. PAYMENT 
+
+Attributes:
+•	Payment_ID (PK)
+•	Amount
+•	Payment_Date
+•	User_ID (FK)
+•	Item_ID (FK)
